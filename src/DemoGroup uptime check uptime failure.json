@@ -1,0 +1,43 @@
+{
+  "name": "projects/qwiklabs-gcp-01-f15e3330c6e8/alertPolicies/13954005426987913111",
+  "displayName": "DemoGroup uptime check uptime failure",
+  "documentation": {},
+  "userLabels": {},
+  "conditions": [
+    {
+      "name": "projects/qwiklabs-gcp-01-f15e3330c6e8/alertPolicies/13954005426987913111/conditions/13954005426987909620",
+      "displayName": "Failure of uptime check_id demogroup-uptime-check-atqupoRmSbc",
+      "conditionThreshold": {
+        "aggregations": [
+          {
+            "alignmentPeriod": "1200s",
+            "crossSeriesReducer": "REDUCE_COUNT_FALSE",
+            "groupByFields": [
+              "resource.label.*"
+            ],
+            "perSeriesAligner": "ALIGN_NEXT_OLDER"
+          }
+        ],
+        "comparison": "COMPARISON_GT",
+        "duration": "60s",
+        "filter": "metric.type=\"monitoring.googleapis.com/uptime_check/check_passed\" AND metric.label.check_id=\"demogroup-uptime-check-atqupoRmSbc\" AND group.id=\"8918735386741847895\" AND resource.type=\"gce_instance\"",
+        "thresholdValue": 1,
+        "trigger": {
+          "count": 1
+        }
+      }
+    }
+  ],
+  "alertStrategy": {},
+  "combiner": "OR",
+  "enabled": true,
+  "notificationChannels": [],
+  "creationRecord": {
+    "mutateTime": "2026-08-19T03:49:24.137388007Z",
+    "mutatedBy": "student-04-7032a057eff0@qwiklabs.net"
+  },
+  "mutationRecord": {
+    "mutateTime": "2026-08-19T03:49:24.137388007Z",
+    "mutatedBy": "student-04-7032a057eff0@qwiklabs.net"
+  }
+}

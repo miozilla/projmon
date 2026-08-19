@@ -1,0 +1,42 @@
+{
+  "name": "projects/qwiklabs-gcp-01-f15e3330c6e8/alertPolicies/6445848098468718465",
+  "displayName": "Uptime Check Policy",
+  "documentation": {},
+  "userLabels": {},
+  "conditions": [
+    {
+      "name": "projects/qwiklabs-gcp-01-f15e3330c6e8/alertPolicies/6445848098468718465/conditions/6445848098468720224",
+      "displayName": "VM Instance - Check passed",
+      "conditionAbsent": {
+        "aggregations": [
+          {
+            "alignmentPeriod": "300s",
+            "groupByFields": [],
+            "perSeriesAligner": "ALIGN_FRACTION_TRUE"
+          }
+        ],
+        "duration": "300s",
+        "filter": "resource.type = \"gce_instance\" AND metric.type = \"monitoring.googleapis.com/uptime_check/check_passed\" AND metric.labels.check_id = \"demogroup-uptime-check-atqupoRmSbc\"",
+        "trigger": {
+          "count": 1
+        }
+      }
+    }
+  ],
+  "alertStrategy": {
+    "notificationPrompts": [
+      "OPENED"
+    ]
+  },
+  "combiner": "OR",
+  "enabled": true,
+  "notificationChannels": [],
+  "creationRecord": {
+    "mutateTime": "2026-08-19T04:02:21.405127550Z",
+    "mutatedBy": "student-04-7032a057eff0@qwiklabs.net"
+  },
+  "mutationRecord": {
+    "mutateTime": "2026-08-19T04:02:21.405127550Z",
+    "mutatedBy": "student-04-7032a057eff0@qwiklabs.net"
+  }
+}
