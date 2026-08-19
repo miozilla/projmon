@@ -1,5 +1,5 @@
 # projmon 🔭🔔
-projmon : Monitoring Multiple Projects | Cloud Monitoring, Alerting Policies, Metrics, Dashboards, Uptime Check |
+projmon : Monitoring Multiple Projects | Cloud Monitoring, Alerting, Notifications, Policies, Metrics, Dashboards, Uptime Check |
 
 
 ## Objectives
