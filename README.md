@@ -10,6 +10,7 @@ projmon : Monitoring Multiple Projects | Cloud Monitoring, Alerting, Notificatio
 ## Similar Skills Set
 - AWS : CloudWatch Alarms
 - Azure : Azure Monitor Alerts
+- Alternative : Prometheus + Grafana, Zabbix 
 
 
 ## Monitoring Multiple Projects with Cloud Monitoring Demo 
